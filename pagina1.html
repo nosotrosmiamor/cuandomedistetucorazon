@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 1 - Primer Texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* Fondo morado oscuro, inspirado en la imagen pero más profundo */
+            background-color: #1a0033;
+            color: #fff; /* Letra blanca */
+            /* Combinación de fuentes para imitar el estilo de "Voga" */
+            font-family: 'Playfair Display', serif; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Para que las medusas no creen barras de desplazamiento */
+            position: relative;
+        }
+
+        /* Títulos (estilo Voga) */
+        h1 {
+            font-family: 'Playfair Display SC', serif;
+            font-weight: 700;
+            font-size: 3.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            /* Toque de brillo inspirado en la referencia */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+        /* Párrafos (estilo Voga) */
+        p {
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            max-width: 600px;
+            text-align: center;
+            margin: 0 20px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Contenedor del texto (centrado) */
+        .text-container {
+            z-index: 10; /* Para que el texto esté sobre las medusas */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.2); /* Fondo sutil para el texto */
+            border-radius: 10px;
+        }
+
+        /* Decoración de Medusas (Efecto bioluminiscente de la imagen) */
+        .jellyfish {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.6; /* Sutiles */
+            filter: drop-shadow(0 0 10px #ff00ff); /* Brillo fucsia/magenta */
+            animation: drift 20s infinite ease-in-out;
+        }
+
+        /* Medusa 1 (grande, arriba a la izquierda) */
+        .jelly-1 {
+            width: 300px;
+            height: 300px;
+            top: -50px;
+            left: -80px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ff00ff" d="M50 10 C30 10 10 30 10 50 C10 65 20 78 35 83 C38 84 40 85 40 88 C40 92 35 95 35 98 C40 98 45 95 45 92 C45 88 47 84 50 83 C53 84 55 88 55 92 C55 95 60 98 65 98 C65 95 60 92 60 88 C60 85 62 84 65 83 C80 78 90 65 90 50 C90 30 70 10 50 10 Z M50 20 C65 20 80 35 80 50 C80 62 72 73 60 77 C55 78 50 78 45 77 C33 73 25 62 25 50 C25 35 35 20 50 20 Z"/></svg>');
+        }
+
+        /* Medusa 2 (mediana, abajo a la derecha, invertida) */
+        .jelly-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -30px;
+            right: -50px;
+            transform: scaleX(-1);
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ff00ff" d="M50 10 C30 10 10 30 10 50 C10 65 20 78 35 83 C38 84 40 85 40 88 C40 92 35 95 35 98 C40 98 45 95 45 92 C45 88 47 84 50 83 C53 84 55 88 55 92 C55 95 60 98 65 98 C65 95 60 92 60 88 C60 85 62 84 65 83 C80 78 90 65 90 50 C90 30 70 10 50 10 Z M50 20 C65 20 80 35 80 50 C80 62 72 73 60 77 C55 78 50 78 45 77 C33 73 25 62 25 50 C25 35 35 20 50 20 Z"/></svg>');
+        }
+
+        /* Animación de movimiento lento */
+        @keyframes drift {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 15px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Enlace de navegación */
+        .nav-link {
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+            z-index: 11;
+        }
+
+        .nav-link:hover {
+            color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jellyfish jelly-1"></div>
+    <div class="jellyfish jelly-2"></div>
+
+    <div class="text-container">
+       
+      <p>
+        aveces el mundo se detiene
+        en una imagen, un momento 
+        o un latido
+        <br><br>
+        Este libro es el refugio de todo
+        lo que somos, desde que decidiste
+        confiarme lo mas valioso que tienes.
+        <br><br>
+        Gracias por dejarme cuidar de tu corazon.
+        <br><br>
+        Lo voy a cuidar todo lo que me de 
+        el tiempo de vida
+    
+      <p/>
+    </div>
+
+    <a href="pagina2.html" class="nav-link">Siguiente página →</a>
+
+        <a href="indice.html" class="nav-link">Indice →</a>
+
+</body>
+</html>
+

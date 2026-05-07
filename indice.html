@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Índice - Nuestra Historia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a0033;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Reutilizamos el estilo de las medusas para coherencia visual */
+        .jellyfish {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.4;
+            filter: drop-shadow(0 0 10px #ff00ff);
+            animation: drift 25s infinite ease-in-out;
+        }
+
+        .jelly-1 { width: 250px; height: 250px; top: -20px; right: -50px; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ff00ff" d="M50 10 C30 10 10 30 10 50 C10 65 20 78 35 83 C38 84 40 85 40 88 C40 92 35 95 35 98 C40 98 45 95 45 92 C45 88 47 84 50 83 C53 84 55 88 55 92 C55 95 60 98 65 98 C65 95 60 92 60 88 C60 85 62 84 65 83 C80 78 90 65 90 50 C90 30 70 10 50 10 Z"/></svg>'); }
+        
+        .index-container {
+            z-index: 10;
+            width: 80%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 0, 255, 0.2);
+        }
+
+        h1 {
+            font-family: 'Playfair Display SC', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 5px;
+            text-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+        }
+
+        /* Estilo del Índice tipo Libro */
+        .index-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .index-item:hover {
+            color: #ff00ff;
+            transform: translateX(10px);
+        }
+
+        .title {
+            flex-shrink: 0;
+        }
+
+        .dots {
+            flex-grow: 1;
+            border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+            margin: 0 10px;
+        }
+
+        .page-num {
+            flex-shrink: 0;
+            font-family: 'Playfair Display SC', serif;
+        }
+
+        .nav-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+
+        @keyframes drift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-30px, 20px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jellyfish jelly-1"></div>
+
+    <div class="index-container">
+        <h1>Índice</h1>
+
+        <a href="portada.html" class="index-item">
+            <span class="title">Portada</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 1</span>
+        </a>
+
+        <a href="pagina1.html" class="index-item">
+            <span class="title">Bienvenida Especial</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 2</span>
+        </a>
+          <a href="pagina2.html" class="index-item">
+            <span class="title">Un muchacho perdido</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 3</span>
+        </a>
+          <a href="pagina3.html" class="index-item">
+            <span class="title">Recuerdos de nuestros besos</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 3</span>
+        </a>
+          <a href="pagina4.html" class="index-item">
+            <span class="title">Momentos preciosos</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 4</span>
+        </a>
+          <a href="pagina5.html" class="index-item">
+            <span class="title">Nuestras salidas</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 5</span>
+        </a>
+          <a href="pagina6.html" class="index-item">
+            <span class="title">Pequeños amigos y la pandilla</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 6</span>
+        </a>
+        
+       
+          <a href="pagina8.html" class="index-item">
+            <span class="title">100 cosas que amo de ti</span>
+            <span class="dots"></span>
+            <span class="page-num">pág. 7</span>
+        </a>
+        
+        
+        </a>
+          <a href="pagina10.html" class="index-item">
+            <span class="title">Final </span>
+            <span class="dots"></span>
+            <span class="page-num">final</span>
+        </a>
+        
+
+   
+
+        <div class="footer-nav">
+    <a href="index.html" class="nav-link">←Portada</a>
+</div>
+
+        
+        
+    </div>
+
+</body>
+</html>
+

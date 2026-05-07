@@ -1,0 +1,186 @@
+,<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Muchacho Perdido</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Alice&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000; /* Fondo negro */
+            color: #e0e0e0;
+            font-family: 'Alice', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* Cabecera con la imagen del bosque, cascada y luna */
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,1)), 
+                        url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+            /* Nota: He puesto una imagen de referencia de un bosque nocturno. 
+               Puedes cambiar el URL por una de una cascada con luna que te guste */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px #bc13fe;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: -50px auto 50px auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 1.15rem;
+            text-align: justify;
+            letter-spacing: 0.5px;
+        }
+
+        p::first-letter {
+            font-size: 2.5rem;
+            color: #bc13fe;
+            float: left;
+            margin-right: 8px;
+            line-height: 1;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Cuadro para la imagen azul al final */
+        .photo-frame {
+            width: 200%;
+            max-width: 200px;
+            height: 350px;
+            margin: 60px auto;
+            border: 2px solid #0077ff; /* Borde azul */
+            background-color: #001133; /* Fondo azul oscuro por si no carga la foto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 30px rgba(0, 119, 255, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer-nav {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .nav-link {
+            color: #bc13fe;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 1px solid #bc13fe;
+            padding: 10px 25px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            background: #bc13fe;
+            color: white;
+        }
+
+        /* Estilo de la frase final de la mujer */
+        .whisper {
+            font-style: italic;
+            text-align: center;
+            color: #bc13fe;
+            font-size: 1.5rem;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-image">
+        <h1 class="main-title">El muchacho perdido</h1>
+    </div>
+
+    <div class="content-container">
+        
+        <p>Solía contar un viejo junto a la fogata que, por los bosques nocturnos, se veían luces de un morado claro que llamaban la atención de viajeros y campesinos por igual. No solo por su tono incandescente y su brillo sin igual, sino por los caminos que se formaban con ellas, bellos e impresionantes.</p>
+
+        <p>Cuentos de viejos, decían. Asustar y ser escuchados, decían. Eso era lo que pensaba un joven de cabello lacio, aunque algo ondulado, de vestir formal incluso en días lluviosos, donde el agua y el lodo del campo fácilmente manchan la seda y el algodón.</p>
+
+        <p>Este muchacho, quien no permitía el menosprecio de nadie, pensó que su apariencia tranquila burlaría a los hombres apostadores de la mesa de juegos. Solo un tonto dejaría las monedas sobre la mesa y no tomaría una breve oportunidad.</p>
+
+        <p>No debería haber creído que sería fácil, pero lo hizo. Y entre el disgusto o la emoción que los apostadores sentían al ir corriendo tras él, había una seguridad de que sería atrapado y atacado por los mismos. Pues se dirigía, sin mucho cuidado, a lo más profundo del bosque, ese mismo que los ancianos tomaban como fantástico, como si de un cuento se tratara. Pensaban que alguien tan pequeño no podría durar mucho y que, tarde o temprano, saldría a recibir su merecido… o desaparecería dentro.</p>
+
+        <p>Un pequeño pueblo, una cerveza de lo más añeja y una buena fogata era lo que los abuelos disfrutaban mientras contaban historias a jóvenes mentes inocentes que creían todo. A diferencia de nuestro amigo, que mientras más se acercaba a dicho bosque, más confiado estaba de salir victorioso, pues no era fanático de los cuentos de hadas. Sin duda creía en los accidentes: una mala pisada en una rama curva bastó para terminar rodando colina abajo, llegando a donde la luz no podía tocar, incluso mientras la noche se acercaba.</p>
+
+        <p>Se detuvo bruscamente al estrellarse contra un árbol. Mala fue su suerte al tener un pedazo de madera, grueso y astillado, enterrado en el costado. Su peso hizo lo que debía y el mismo pedazo se partió. Siguió rodando, ahora herido y desangrándose. Al fin pudo sujetarse de un árbol con un brazo, mientras el otro sostenía su cuerpo adolorido. Quejidos y gemidos escapaban de él, pero nadie lo escuchaba, como si incluso aquellos hombres que lo persiguieron se hubieran esfumado.</p>
+
+        <p>Escurriendo sangre, cansado y en un bosque oscuro colina abajo, no tuvo más remedio que caminar para encontrar una salida. Poco a poco la agonía lo consumía y se reprochaba a sí mismo el dolor que pasaba solo por unas monedas y por la soberbia de creerse mejor. Pensaba que ni siquiera necesitaba el dinero, que todo fue por gusto y emoción.</p>
+
+        <p>Su sorpresa llegó cuando vio algo familiar: ramas y rocas iguales a las que había visto al caer. Se alivió y pensó que estaba subiendo. Su mente, desvariada por la pérdida de sangre, creyó que iba en ascenso. Caminó más y más hasta que un brillo alcanzó sus ojos.</p>
+
+        <p>¿Ese color?</p>
+
+        <p>Las historias de los viejos tenían algo de sentido. Fue solo un instante: un destello morado que se esfumó en la oscuridad. No le dio importancia y siguió caminando hasta llegar a la cascada más grande que había visto en su vida. Las rocas guiaban un pequeño río y la luna, postrada en lo alto, observaba cómo las nubes se dispersaban. Por un instante apreció el paisaje más bello que pudo imaginar. Caminó y pensó que podría descansar sobre una roca.</p>
+
+        <p>Mala fue su fortuna: era inestable. Terminó en un resbalón pequeño, pero directo a la cabeza. El golpe fue tan fuerte que pensó que el río se había callado.</p>
+
+        <p>No era más que el agua chorreando por sus oídos. El río lo llevaba de forma brusca en una dirección y, mientras no ponía resistencia, la luna se ocultaba entre las nubes. El miedo lo llenó al ver que iba directo a una grieta.</p>
+
+        <p>—No saldré de esta —pensó.</p>
+
+        <p>El agua era más fuerte que él y su cuerpo débil aceptó que todo había terminado. ¿Lo raro? Al entrar en la grieta, la corriente se sintió más ligera y una luz iluminó el lugar. Ya no era blanca como el reflejo del sol; era opaca, distinta. Mientras nadaba sin voluntad, sintió un golpe en la pierna. No fue un choque, sino el roce de un ser que se movía por debajo, baboso y ligero. Pronto sintió más y más.</p>
+
+        <p>Al cabo de un momento notó que aquellos seres no eran más que medusas. Sí, medusas de un morado claro que iluminaban la cueva, guiando sus pies cansados como si de un cuento mágico se tratase.</p>
+
+        <p>Lleno de emoción vio cómo avanzaban más dentro de la cueva e intentó seguirles el paso. El dolor no lo dejaba. De pronto, la corriente se volvió más fuerte, las medusas avanzaban más rápido y la presión en su cuerpo aumentó. Al borde de la muerte y sin forma de salir, aceptó su destino. Cerró los ojos y, tras ver a la última medusa alumbrar la cueva, flotando boca arriba, decidió morir de una vez.</p>
+
+        <p>Pero no. Para él aún no terminaba.</p>
+
+        <p>Al cabo de un rato despertó tosiendo, con agua en los pulmones. Asustado intentó levantarse, pero no pudo: algo se lo impedía, su cuerpo no reaccionaba. Había algo raro. No estaba flotando en la corriente como un animal, sino recostado sobre las rocas, con la cabeza apoyada en algo… en alguien.</p>
+
+        <p>Inmóvil, vio quién lo sostenía. Era una mujer.</p>
+
+        <p>Con muslos suaves como almohada y una presencia serena, se enamoró al instante. Al abrir mejor los ojos notó un cabello rizado y largo que caía hasta sus muslos. Sus manos, firmes y fuertes, tenían la paciencia suficiente para acariciar su rostro. Ella lo miraba directo a los ojos. Él notó un café brilloso en su mirada y, con una gran sonrisa, la mujer se acercó y le susurró:</p>
+
+        <p class="whisper">—Ya puedes descansar.</p>
+
+        <p>El dolor en su costado había desaparecido. Las medusas no lo acompañaron: lo guiaron. Ella no le hacía daño; al contrario, lo cuidaba. Entonces entendió que esas luces nunca fueron mentira. Lo comprendió todo. Dejos caer su cuerpo y, rendido ante el hermoso rostro de la mujer, solo sonrió y poco a poco cerró los ojos. Al fin podía descansar.</p>
+
+        <div class="photo-frame">
+            <img src="tu-foto-azul.jpg" alt="Momento especial">
+        </div>
+
+    </div>
+  <div class="footer-nav">
+    <a href="indice.html" class="nav-link">← Anterior</a>
+    
+    <a href="indice.html" class="nav-link">Índice</a>
+    
+    <a href="pagina3.html" class="nav-link">Siguiente →</a>
+</div>
+
+
+</body>
+</html>
+

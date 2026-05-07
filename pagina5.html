@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestras Salidas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Alice', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            padding: 60px 0;
+            background: linear-gradient(to right, #bc13fe, #ffffff, #bc13fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
+        }
+
+        .collage-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estructura de cada bloque de salida */
+        .exit-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 80px;
+            gap: 40px;
+        }
+
+        /* Alternancia: Los pares se invierten */
+        .exit-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .photo-space {
+            flex: 1;
+            height: 350px;
+            background: #111;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .photo-space img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .photo-space img:hover {
+            transform: scale(1.05);
+        }
+
+        .text-space {
+            flex: 1;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Colores alternados para el texto */
+        .exit-block:nth-child(odd) .text-space {
+            color: #bc13fe; /* Morado */
+            text-shadow: 0 0 5px rgba(188, 19, 254, 0.2);
+        }
+
+        .exit-block:nth-child(even) .text-space {
+            /* Plateado Metálico */
+            background: linear-gradient(to bottom, #ffffff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Navegación al centro */
+        .footer-nav {
+            text-align: center;
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: 1px solid #bc13fe;
+            border-radius: 30px;
+            transition: 0.3s;
+            background: rgba(188, 19, 254, 0.05);
+        }
+
+        .nav-link:hover {
+            background: #bc13fe;
+            box-shadow: 0 0 20px #bc13fe;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="header-title">Nuestras Salidas</h1>
+
+    <div class="collage-container">
+        
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida1.jpg" alt="Salida 1"></div>
+            <div class="text-space"> Aun recuerdo nuestra primer salida, algo pequeño pero especial para conocernos mejor,
+                ese top hacia r3saltar bello detalles y el tiempo
+                que platicamos ahi lo disfrute cada momento.</div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida2.jpg" alt="Salida 2"></div>
+            <div class="text-space">esa salida inesperada fue algo especial
+                entonces no tenia intenciones mas alla de la amistada
+                pero me gustaba darte regalos aun asi
+                y cuando tenia oportunidad te compraba lo que te gustaba.</div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida3.jpg" alt="Salida 3"></div>
+            <div class="text-space"> tu cumpleaños, algo importante para mk
+                un momento donde aunque no me gustaba estar con tus amigas
+                me encantaba estar contigo y justo llegue tarde pero 
+                desde que fui a canada ya estaba
+                tomando en cuenta tu regalo, espero aun tengas los aretes
+                pero me gusta recordar que ese nos tomamos de las manos.</div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida4.jpg" alt="Salida 4"></div>
+            <div class="text-space">Ese dia recuerdo que me preguntaron ¿te gusta afrika?
+                y no supe como disimular aunque no estaba 100% seguro sabia que te amaba
+                romanticamente o amistosamente, pero entonces ya tenia un amor a ti
+                y quise ver a tu papa porque dije, esta muchacha es importante para mi
+                quiero que su familia tambien sepa mas de mi, pase cada momento de esa salida
+                tranquilo solo viendote y molestandote porque disfrute 
+                cada momento contigo
+            </div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida5.jpg" alt="Salida 5"></div>
+            <div class="text-space">Mi salida favorita en lo personal, aunque me perdi
+             por fin tuve la maravillosa oportunidad
+de conocer a tu familia, quede encantado con la comida casera de tu abue
+  lo linda de tu hermana, el como tu familia me incluia en la conversacion 
+y lo maravillosos que fueron conmigo. <br> como convivi de una manera unica
+con todos, tu primo con fuerza, tu prima platicando, tus tios contandome su vida.
+tu abue preguntandome de su vida, tu te veias cerrada y nerviosa
+                pero creo que todo salio bien <br>
+nunca quise admitir incluso cuando tu papa me pregunto si estaba nervioso le menti
+porque en el fondo iba tan asustado de arruinar nuestra amistad con decir algo que no.
+                <br> uno de mis dias favoritos.
+                <br> diria mas pero no quiero 
+ cargarte con mucho amor                 .</div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida6.jpg" alt="Salida 6"></div>
+            <div class="text-space">Una salida muy hermosa recuerdo que nos paseamos
+                y platicamos, esa salida la senti mas de amigos
+        y aunque lo eramos nuestra cercania se sentia muy tranquila
+     y fue un dia increible porque pase cada momento a solas contigo.           
+                .</div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida7.jpg" alt="Salida 7"></div>
+            <div class="text-space">Aqui la salida definitiva, pocas las palabras que se me ocurren
+                para decirte todo lo que senti ese dia, desde el momento en que te vi 
+                supe cuan hermosa eras y lo importante para mi
+                el cine fue divertido, pasear por las plazas y buscar baño tambien
+         pero creo que mi parte favorits fue cuando nos recostamos y jugando poco a poco nos 
+abrazamos de cucharita, un momento especial y lindo porque senti tu corazon con el mio.
+                recuerdo que despues hablamos de eso y te dije me enamore esa vez
+                y escribiste yo tambien, no sabes como salte de emocion y de felicidad
+               
+                               .</div>
+        </div>
+
+        <div class="exit-block">
+            <div class="photo-space"><img src="salida8.jpg" alt="Salida 8"></div>
+            <div class="text-space">Recuerdo que no pudimos 
+    salir en mi cumpleaños pero quedamos un dia antes, primera vez que vimos
+                los muebles de ikea y platicamos de nuestro futuro
+                entonces fue una linda salida y pasamos buenos momentos
+   me encanto ese dia y llevarte cargando es una de las cosas que mas amo
+te tome muchas fotos, te dije cuanto te amaba y pase cada momento pensando en ti
+disfrute mucho de ese dis y los regalos que me diste me fascinaron        
+                
+             .</div>
+        </div>
+        
+               <div class="exit-block">
+            <div class="photo-space"><img src="salida9.jpg" alt="Salida 8"></div>
+            <div class="text-space">Nuestra salida más reciente, recordándome que cada vez te quiero un poco más
+             mas caminata y platica con yuls pero la pasamos muy bien, fue divertido
+                me encanto muack .</div>
+        </div>
+
+    </div>
+
+    <div class="footer-nav">
+        <a href="pagina4.html" class="nav-link">← Anterior</a>
+        <a href="indice.html" class="nav-link">Índice</a>
+        <a href="pagina6.html" class="nav-link">Siguiente →</a>
+    </div>
+
+</body>
+</html>
+
